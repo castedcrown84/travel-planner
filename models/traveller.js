@@ -1,9 +1,9 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
-class traveller extends Model {}
+class Traveller extends Model {}
 
-traveller.init(
+Traveller.init(
 
 {
 
@@ -49,10 +49,6 @@ traveller.init(
 
 
 
-}
+})
 
-
-
-
-
-)
+module.exports = Traveller;
